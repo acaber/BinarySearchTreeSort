@@ -1,34 +1,42 @@
 /**
- * FileName: Tree.java
- * Author: Rebecca Johnson
- * Date: 9/24/2017
+ * FileName: Tree.java 
+ * Author: Rebecca Johnson 
+ * Date: 9/24/2017 
  * Description: This class holds the nodes in the tree.
- *
  */
 
 public class Tree<BST> {
 
-	public Tree<BST> right;
-	public Tree<BST> left;
-	public BST data;
+	//to hold left child node
+	public Tree<BST> leftChild;
+	
+	//to hold right child node
+	public Tree<BST> rightChild;
+	
+	//to hold the key
+	public BST key;
 
-	public Tree(BST data) {
-		this.data = data;
-		this.left = null;
-		this.right = null;
+	//constructor
+	public Tree(BST key) {
+		this.key = key;
+		this.leftChild = null;
+		this.rightChild = null;
 	}
 
+	//this method returns the right node when called
 	public Tree<BST> getRightNode() {
-		return right;
+		return rightChild;
 	}
 
+	//this method returns the left node when called
 	public Tree<BST> getLeftNode() {
-		return left;
+		return leftChild;
 	}
 
+	//to string method
 	@Override
 	public String toString() {
-		return data + " ";
+		return key + " ";
 	}
 
 }

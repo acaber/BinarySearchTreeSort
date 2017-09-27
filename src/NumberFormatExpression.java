@@ -1,3 +1,4 @@
+
 /**
  * FileName: NumberFormatExpression.java
  * Author: Rebecca Johnson
@@ -11,6 +12,7 @@ import javax.swing.JOptionPane;
 
 public class NumberFormatExpression extends Exception {
 
+	//this method displays the error message when it is called
 	public static void getError() {
 		JOptionPane.showMessageDialog(null, "Error: Non-Numeric Input");
 	}
